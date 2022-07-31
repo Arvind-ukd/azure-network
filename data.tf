@@ -1,3 +1,6 @@
 data "azurerm_resources" "example" {
-  resource_group_name = "arvind-rg"
+  name = "arvind-rg"
+}
+output "id" {
+  value = data.azurerm_resource_group.example.id
 }
