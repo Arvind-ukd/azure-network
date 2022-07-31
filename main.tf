@@ -33,14 +33,14 @@ resource "azurerm_virtual_network" "example2" {
 
 resource "azurerm_virtual_network" "example3" {
 
-  name         = "southindia-network"
-  location         =  "South India"
+  name         = "eastus-network"
+  location         =  "East US"
   resource_group_name = "arvind-rg"
   address_space      = ["172.16.0.0/16"]
   
 
   subnet {
-    name           = "eastasia-subnet"
+    name           = "eastus-subnet"
     address_prefix = "172.16.0.0/24"
   }
 
@@ -50,14 +50,14 @@ resource "azurerm_virtual_network" "example3" {
 
 resource "azurerm_virtual_network" "example4" {
 
-  name            = "ukwest-network"
-  location         =  "UK West"
+  name            = "westus-network"
+  location         =  "West US"
   resource_group_name = "arvind-rg"
   address_space      = ["10.10.0.0/16"]
   
 
   subnet {
-    name           = "ukwest-subnet"
+    name           = "westus-subnet"
     address_prefix = "10.10.0.0/24"
   }
   
