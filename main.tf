@@ -1,4 +1,4 @@
-resource "azurerm_virtual_network" "example11" {
+resource "azurerm_virtual_network" "example1" {
   name                = "india-network"
   location            =  "Central India"
   resource_group_name = data.azurerm_resource_group.example.id
@@ -12,7 +12,7 @@ resource "azurerm_virtual_network" "example11" {
   
 
 
-  name1               = "eastasia-network"
+  name             = "eastasia-network"
   location         =  "East Asia"
   resource_group_name = data.azurerm_resource_group.example.id
   address_space     = ["192.168.0.0/16"]
