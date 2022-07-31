@@ -49,3 +49,4 @@ resource "azurerm_virtual_network" "example11" {
     address_prefix = "10.10.0.0/24"
   }
   
+  }
