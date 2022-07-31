@@ -1,6 +1,6 @@
 resource "azurerm_virtual_network" "example" {
   name                = "india-network"
-  location            =  " Central India"
+  location            =  "Central India"
   resource_group_name = data.azurerm_resources.example.resources_group_name
   address_space       = ["10.0.0.0/16"]
   
@@ -11,7 +11,7 @@ resource "azurerm_virtual_network" "example" {
   }
 
   name                = "eastasia-network"
-  location            =  "East Asia "
+  location            =  "East Asia"
   resource_group_name = data.azurerm_resources.example.resources_group_name
   address_space       = ["192.168.0.0/16"]
   
@@ -22,7 +22,7 @@ resource "azurerm_virtual_network" "example" {
   }
 
   name                = "southindia-network"
-  location            =  "East Asia "
+  location            =  "South India"
   resource_group_name = data.azurerm_resources.example.resources_group_name
   address_space       = ["172.16.0.0/16"]
   
