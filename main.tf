@@ -9,9 +9,9 @@ resource "azurerm_virtual_network" "example11" {
     name           = "india-subnet"
     address_prefix = "10.0.1.0/24"
   }
-  }
+  
 
-resource "azurerm_virtual_network" "example1" {
+
   name                = "eastasia-network"
   location            =  "East Asia"
   resource_group_name = data.azurerm_resources.example.resources_group_name
@@ -22,9 +22,9 @@ resource "azurerm_virtual_network" "example1" {
     name           = "eastasia-subnet"
     address_prefix = "192.168.0.0/24"
   }
-  }
+  
 
-resource "azurerm_virtual_network" "example2" {
+
   name                = "southindia-network"
   location            =  "South India"
   resource_group_name = data.azurerm_resources.example.resources_group_name
@@ -35,8 +35,8 @@ resource "azurerm_virtual_network" "example2" {
     name           = "eastasia-subnet"
     address_prefix = "172.16.0.0/24"
   }
-  }
-  resource "azurerm_virtual_network" "example3" {
+  
+
 
   name                = "ukwest-network"
   location            =  "UK West"
@@ -48,4 +48,4 @@ resource "azurerm_virtual_network" "example2" {
     name           = "ukwest-subnet"
     address_prefix = "10.10.0.0/24"
   }
-  }
+  
